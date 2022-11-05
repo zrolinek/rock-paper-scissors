@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
-
-  Score
+  <!-- Score
   Rules
 
   You Picked
@@ -17,21 +19,53 @@
   You Win
   You Lose
 
-  Play Again
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  Play Again -->
 </head>
 <body>
 
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://rolinek.com">Zdeněk Rolínek</a>.
+  <div class="wrapper">
+    <div class="header">
+      <div class="header__wrapper">
+        <div class="logo">
+          <img src="img/logo.svg" alt="Logo">
+        </div>
+        <div class="scoreboard">
+          <div class="scoreboard__wrapper">
+            <h3 class="scoreboard__title">Score</h3>
+            <span class="scoreboard__score" id="score">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gamefield">
+      <div class="gamefield__wrapper">
+        <div class="gamefield__background">
+          <img src="./img/bg-triangle.svg" alt="Triangle">
+        </div>
+        <div class="gamefield__top">
+          <div class="game__btn" id="a">
+            <div class="game-btn__circle paper">
+              <img src="./img/icon-paper.svg" alt="Paper">
+            </div>
+          </div>
+          <div class="game__btn" id="c">
+            <div class="game-btn__circle scissors">
+              <img src="./img/icon-scissors.svg" alt="Scissors">
+            </div>
+          </div>
+        </div>
+        <div class="gamefield__bottom">
+          <div class="game__btn" id="b">
+            <div class="game-btn__circle rock">
+              <img src="./img/icon-rock.svg" alt="Rock">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rules">
+      <a href="#" class="rules__btn">Rules</a>
+    </div>
   </div>
 </body>
 </html>
