@@ -217,4 +217,15 @@ html {
   padding: 5px 25px;
   border: 2px solid hsl(217deg, 16%, 45%);
   border-radius: 10px;
+}
+.rules-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.rules-modal_active {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

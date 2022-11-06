@@ -10,16 +10,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
-  <!-- Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again -->
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/game.js"></script>
 </head>
 <body>
 
@@ -64,7 +57,13 @@
       </div>
     </div>
     <div class="rules">
-      <a href="#" class="rules__btn">Rules</a>
+      <a href="#" class="rules__btn" id="rulesBtn">Rules</a>
+    </div>
+  </div>
+
+  <div class="rules-modal" id="rulesModal">
+    <div class="rules-modal__dialog">
+      <img src="./img/image-rules.svg" alt="Rules">
     </div>
   </div>
 </body>
