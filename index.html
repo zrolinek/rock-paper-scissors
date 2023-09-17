@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Zdeněk Rolínek">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Rock, Paper, Scissors</title>
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/game.js"></script>
+</head>
+<body>
+  <div class="whole-website-note" style='width: 100%; background:rgb(254, 84, 84); color:white; font-size:14px; font-weight:bold; padding: 10px 20px;display: flex;justify-content: space-between;'>
+		<a href="https://rolinek.com" style="text-decoration: none; color:#00587D;">< zpět na hlavní stránku</a>
+		<span>Tento web je součástí portfolia <a href="https://rolinek.com" target="_blank">rolinek.com</a>. Všechny informace na tomto webu jsou smyšlené a neplatné.
+	</div>
+  <div class="wrapper">
+    <div class="header">
+      <div class="header__wrapper">
+        <div class="logo">
+          <img src="img/logo.svg" alt="Logo">
+        </div>
+        <div class="scoreboard">
+          <div class="scoreboard__wrapper">
+            <h3 class="scoreboard__title">Score</h3>
+            <span class="scoreboard__score" id="score">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gamefield">
+      <div class="gamefield__wrapper">
+        <div class="gamefield__background">
+          <img src="./img/bg-triangle.svg" alt="Triangle">
+        </div>
+        <div class="gamefield__top">
+          <div class="game__btn" id="gameOption0">
+            <div class="game-btn__circle paper">
+              <img src="./img/icon-paper.svg" alt="Paper">
+            </div>
+          </div>
+          <div class="game__btn" id="gameOption1">
+            <div class="game-btn__circle scissors">
+              <img src="./img/icon-scissors.svg" alt="Scissors">
+            </div>
+          </div>
+        </div>
+        <div class="gamefield__bottom">
+          <div class="game__btn" id="gameOption2">
+            <div class="game-btn__circle rock">
+              <img src="./img/icon-rock.svg" alt="Rock">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gameresult">
+      <div class="gameresult__wrapper">
+        <div class="gamefield__top">
+          <div class="gameresult__option gameresult__option--player">
+            <span>You picked</span>
+            <div class="game-btn__circle">
+              <img src="./img/icon-paper.svg" alt="Player´s choice">
+            </div>
+          </div>
+          <div class="gameresult__option gameresult__option--computer">
+            <span>The House picked</span>
+            <div class="game-btn__circle">
+              <img src="./img/icon-paper.svg" alt="House´s choice">
+            </div>
+          </div>
+        </div>
+        <div class="gameresult__info">
+          <span id="resultText"></span>
+          <a href="javascript:void(0)" class="btn gameresult-info__btn" id="playAgainBtn">Play again</a>
+        </div>
+      </div>
+    </div>
+    <div class="rules">
+      <a href="javascript:void(0)" class="btn rules__btn" id="rulesBtn">Rules</a>
+    </div>
+  </div>
+
+  <div class="rules-modal" id="rulesModal">
+    <div class="rules-modal__dialog">
+      <h2 class="rules-modal-dialog__title">Rules</h2>
+      <img class="rules-modal-dialog__img" src="./img/image-rules.svg" alt="Rules">
+      <span class="rules-modal-dialog__close" id="rulesClose">&times;</span>
+    </div>
+  </div>
+</body>
+</html>
